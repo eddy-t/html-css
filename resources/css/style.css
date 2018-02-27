@@ -3,27 +3,70 @@
   margin: 0 auto;
 }
 
-
-.manga-text-box {
-  position: absolute;                      /* positionne l’élément suivant les coordonnées top et left /// Voir PDF */
-  width: 1140px;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);         /* Elle permet d’effectuer une translation (un déplacement) de l’élément sur les axes X et Y. /// Voir PDF */
-}
-
 html {
-   background: #fff;                               /* couleur de fond */
-   font-family:  ‘Lato’,‘Arial’, sans-serif;       /* police de caractère */
-   font-weight : 300;                              /* épaisseur de la police */
-   font-size: 20px;                                /* taille de la police */
-   color: #555;                                    /* couleur de la police */
-   text-rendering: optimizeLegibility;             /*  /// Voir PDF */
+  background: #fff;                               /* couleur de fond */
+  background-image: url("../../resources/img/kitty.png");
+  background-size: auto;
+  background-position: center;
+  font-family:  ‘Lato’,‘Arial’, sans-serif;       /* police de caractère */
+  font-weight : 300;                              /* épaisseur de la police */
+  font-size: 20px;                                /* taille de la police */
+  color: #555;                                    /* couleur de la police */
+  text-rendering: optimizeLegibility;             /*  /// Voir PDF */
 }
 
 header {
-  background-image: linear-gradient(rgba(25, 127, 40, 0.7), rgba(49, 255, 81, 0.7), url(resources/img/img-manga.jpg); /* Ajout background et filtre */
+  background: #fffbd5;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #fffbd5, #b20a2c);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #fffbd5, #b20a2c); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   background-size: cover;
   background-position: center;
-  height: 100vh;
+  height: 20.3vh;
+}
+
+p {
+  font-family: Kreon;
+  font-weight: 500;
+  font-size: 35px;
+}
+
+.nav-link {
+  color:#000;
+  font-size: 30px;
+}
+
+.titre {
+  font-family: "Indie Flower","Arial",sans-serif;
+  position: absolute;                      /* positionne l’élément suivant les coordonnées top et left /// Voir PDF */
+  min-width: 1920px;
+  top: 10%;
+  left: 960px;
+  transform: translate(-50%, -50%);         /* Elle permet d’effectuer une translation (un déplacement) de l’élément sur les axes X et Y. /// Voir PDF */
+}
+
+
+.content {
+  position: absolute;
+  top:25%;
+  left: 20%;
+  right: 25%;
+}
+
+.col-xs-3 {
+  box-sizing: border-box;
+  margin-left: 10px;
+  padding: 15px 10px;
+}
+
+#logo {
+  font-size: 100px;
+  color: #FFF;
+}
+
+#chats {
+  font-family: "Indie Flower","Arial",sans-serif;
+  font-weight: 800;
+  font-size: 50px;
+  padding-top: 150px;
+  text-align: center;
 }

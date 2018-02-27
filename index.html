@@ -1,21 +1,111 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Acceuil - HTML/CSS</title>
+  <title>Acceuil</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
   <link rel="stylesheet" type="text/css" href="vendors/css/reboot.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <link rel="stylesheet" type="text/css" href="resources/css/style.css">
   <link href="https://fonts.googleapis.com/css?family=Lato:100,300i,400,900" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Kreon|Indie+Flower" rel="stylesheet">
 </head>
 <body>
   <header>
-    <div class="manga-text-box"> <!-- Première rangé -->
-    <h1>Site de Mangas</h1>
-    <a href="#">Shonen</a>
-    <a href="#">Seinen</a>
+    <div class="titre page-header"> <!-- Bannière et titre -->
+    <h1 class="animated rubberBand" id="logo">Galerie photos</h1>
+    <ul class="nav nav-tabs">
+<li class="nav-item">
+  <a class="nav-link active" href="#">Acceuil</a>
+</li>
+<li class="nav-item dropdown">
+  <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Galeries</a>
+  <div class="dropdown-menu">
+    <a class="dropdown-item" href="#chats">Chats</a>
+    <a class="dropdown-item" href="#chiens">Chiens</a>
+    <a class="dropdown-item" href="#poissons">Poissons</a>
+</li>
+<li class="nav-item">
+  <a class="nav-link" href="#">A Propos</a>
+</li>
+</ul>
     </div>
   </header>
+  <div class="content container">
+    <p id="intro" class="container">
+      Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus
+      Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus
+      Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus
+      Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus</p>
+    <h3 id="chats" class="container">Photos de chats</h3></br>
+    <div class="container">
+    <div class="row">
+        <div class="col-xs-3">
+            <a href="resources/img/chat1.jpeg" class="thumbnail">
+                <img src="resources/img/chat1_tn.jpg" alt="Petit chatounet" />
+            </a>
+        </div>
+        <div class="col-xs-3">
+            <a href="resources/img/chat2.jpeg" class="thumbnail">
+                <img src="resources/img/chat2_tn.jpg" alt="Image 2" />
+            </a>
+        </div>
+        <div class="col-xs-3">
+            <a href="resources/img/chat3.jpeg" class="thumbnail">
+                <img src="resources/img/chat3_tn.jpg" alt="Image 3" />
+            </a>
+        </div>
+        <div class="col-xs-3">
+            <a href="resources/img/chat4.jpeg" class="thumbnail">
+                <img src="resources/img/chat4_tn.jpg" alt="Image 4" />
+            </a>
+              </div>
+        <div class="col-xs-3">
+            <a href="resources/img/chat1.jpeg" class="thumbnail">
+              <img src="resources/img/chat1_tn.jpg" alt="Image 4" />
+            </a>
+              </div>
+        <div class="col-xs-3">
+            <a href="resources/img/chat3.jpeg" class="thumbnail">
+              <img src="resources/img/chat3_tn.jpg" alt="Image 4" />
+            </a>
+              </div>
+        <div class="col-xs-3">
+            <a href="resources/img/chat2.jpeg" class="thumbnail">
+              <img src="resources/img/chat2_tn.jpg" alt="Image 4" />
+            </a>
+              </div>
+        <div class="col-xs-3">
+            <a href="resources/img/chat2.jpeg" class="thumbnail">
+              <img src="resources/img/chat2_tn.jpg" alt="Image 4" />
+            </a>
+              </div>
+        <div class="col-xs-3">
+            <a href="resources/img/chat2.jpeg" class="thumbnail">
+              <img src="resources/img/chat2_tn.jpg" alt="Image 4" />
+            </a>
+              </div>
+        <div class="col-xs-3">
+            <a href="resources/img/chat4.jpeg" class="thumbnail">
+              <img src="resources/img/chat4_tn.jpg" alt="Image 4" />
+            </a>
+              </div>
+        <div class="col-xs-3">
+            <a href="resources/img/chat4.jpeg" class="thumbnail">
+              <img src="resources/img/chat4_tn.jpg" alt="Image 4" />
+            </a>
+              </div>
+        <div class="col-xs-3">
+            <a href="resources/img/chat4.jpeg" class="thumbnail">
+              <img src="resources/img/chat4_tn.jpg" alt="Image 4" />
+            </a>
+        </div>
+    </div>
+</div>
+  <!--  Code JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </body>
 </html>
