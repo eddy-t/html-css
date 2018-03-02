@@ -49,11 +49,12 @@ header {
   background-image: url(../../resources/img/logo.png);
   opacity: 0.8;
   height: 300px;
-  background-size: 1900px;
+  background-size: 1920px;
   background-position: center;
   max-width: 1920px;
   border: #000 solid 5px;
   background-repeat: no-repeat;
+  font-weight: 600;
 }
 
 p {
@@ -71,7 +72,6 @@ p {
 .titre {
   text-shadow: 2px 0 0 #FFF, 0 2px 0 #FFF, 0 -2px 0 #FFF, -2px 0 0 #FFF, 2px 2px 0 #FFF, 2px -2px 0 #FFF, -2px 2px 0 #FFF, -2px -2px 0 #FFF;
   font-family: "Courgette", "Arial", sans-serif;
-  /* positionne l’élément suivant les coordonnées top et left /// Voir PDF */
   max-width: 1920px;
 }
 
@@ -100,6 +100,13 @@ p {
   /* Code pour contour police */
 }
 
+#copyright {
+  text-shadow: 2px 0 0 #FFF, 0 2px 0 #FFF, 0 -2px 0 #FFF, -2px 0 0 #FFF, 2px 2px 0 #FFF, 2px -2px 0 #FFF, -2px 2px 0 #FFF, -2px -2px 0 #FFF;
+  font-size: 20px;
+  text-align: center;
+  margin-top: 5%;
+}
+
 #logo a {
   text-decoration: none;
   color: #000;
@@ -113,7 +120,18 @@ p {
   background-position:center;
 }
 
+#contact {
+  margin-top: 50px;
+  font-family: "Courgette", "Arial", sans-serif;
+  font-weight: 800;
+  font-size: 50px;
+  text-align: center;
+  text-shadow: 2px 0 0 #FFF, 0 2px 0 #FFF, 0 -2px 0 #FFF, -2px 0 0 #FFF, 2px 2px 0 #FFF, 2px -2px 0 #FFF, -2px 2px 0 #FFF, -2px -2px 0 #FFF;
+  color: #000;
+}
+
 #chats {
+  margin-top: 10%;
   font-family: "Courgette", "Arial", sans-serif;
   font-weight: 800;
   font-size: 50px;
@@ -125,7 +143,7 @@ p {
 
 .content-text {
   text-shadow: 2px 0 0 #FFF, 0 2px 0 #FFF, 0 -2px 0 #FFF, -2px 0 0 #FFF, 2px 2px 0 #FFF, 2px -2px 0 #FFF, -2px 2px 0 #FFF, -2px -2px 0 #FFF;
-  margin-top: 150px;
+  margin-top: 100px;
   text-align: center;
 }
 
@@ -179,4 +197,8 @@ p {
   max-width: 500px;
   color: #000;
   text-shadow: 2px 0 0 #FFF, 0 2px 0 #FFF, 0 -2px 0 #FFF, -2px 0 0 #FFF, 2px 2px 0 #FFF, 2px -2px 0 #FFF, -2px 2px 0 #FFF, -2px -2px 0 #FFF;
+}
+
+.container {
+  width: 1350px;
 }
