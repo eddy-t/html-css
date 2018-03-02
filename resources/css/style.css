@@ -1,53 +1,83 @@
+/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+@media screen and (max-width: 600px) {
+ .topnav a:not(:first-child) {display: none;}
+ .topnav a.icon {
+   float: right;
+   display: block;
+ }
+}
+
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+@media screen and (max-width: 600px) {
+ .topnav.responsive {position: relative;}
+ .topnav.responsive a.icon {
+   position: absolute;
+   right: 0;
+   top: 0;
+ }
+ .topnav.responsive a {
+   float: none;
+   display: block;
+   text-align: left;
+ }
+}
+
+html body {
+  background: #fff;
+  /* couleur de fond */
+  background-image: url("../../resources/img/kitty.png");
+  background-size: auto;
+  background-position: center;
+  font-family: ‘Lato’, ‘Arial’, sans-serif;
+  /* police de caractère */
+  font-weight: 300;
+  /* épaisseur de la police */
+  font-size: 20px;
+  /* taille de la police */
+  color: #555;
+  /* couleur de la police */
+  text-rendering: optimizeLegibility;
+  /*  /// Voir PDF */
+}
+
 .row {
   max-width: 1140px;
   margin: 0 auto;
 }
 
-html {
-  background: #fff;                               /* couleur de fond */
-  background-image: url("../../resources/img/kitty.png");
-  background-size: auto;
-  background-position: center;
-  font-family:  ‘Lato’,‘Arial’, sans-serif;       /* police de caractère */
-  font-weight : 300;                              /* épaisseur de la police */
-  font-size: 20px;                                /* taille de la police */
-  color: #555;                                    /* couleur de la police */
-  text-rendering: optimizeLegibility;             /*  /// Voir PDF */
-}
-
 header {
-  background: #fffbd5;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to left, #fffbd5, #b20a2c);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to left, #fffbd5, #b20a2c); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  background-size: cover;
+  background-image: url(../../resources/img/logo.png);
+  opacity: 0.8;
+  height: 300px;
+  background-size: 1900px;
   background-position: center;
-  height: 20.3vh;
+  max-width: 1920px;
+  border: #000 solid 5px;
+  background-repeat: no-repeat;
 }
 
 p {
   font-family: Kreon;
   font-weight: 500;
   font-size: 35px;
+  color: #000;
 }
 
 .nav-link {
-  color:#000;
+  color: #000;
   font-size: 30px;
 }
 
 .titre {
-  font-family: "Indie Flower","Arial",sans-serif;
-  position: absolute;                      /* positionne l’élément suivant les coordonnées top et left /// Voir PDF */
-  min-width: 1920px;
-  top: 10%;
-  left: 960px;
-  transform: translate(-50%, -50%);         /* Elle permet d’effectuer une translation (un déplacement) de l’élément sur les axes X et Y. /// Voir PDF */
+  text-shadow: 2px 0 0 #FFF, 0 2px 0 #FFF, 0 -2px 0 #FFF, -2px 0 0 #FFF, 2px 2px 0 #FFF, 2px -2px 0 #FFF, -2px 2px 0 #FFF, -2px -2px 0 #FFF;
+  font-family: "Courgette", "Arial", sans-serif;
+  /* positionne l’élément suivant les coordonnées top et left /// Voir PDF */
+  max-width: 1920px;
 }
-
 
 .content {
   position: absolute;
-  top:25%;
+  top: 25%;
   left: 20%;
   right: 25%;
 }
@@ -59,14 +89,94 @@ p {
 }
 
 #logo {
+  margin-top: 5%;
   font-size: 100px;
-  color: #FFF;
+  line-height: 20px;
+  letter-spacing: 3px;
+  color: #000;
+  margin-left: 20px;
+  background: url(../../resources/img/logo.png)
+  background-position:center;
+  /* Code pour contour police */
+}
+
+#logo a {
+  text-decoration: none;
+  color: #000;
+  margin-top: 5%;
+  font-size: 100px;
+  line-height: 20px;
+  letter-spacing: 3px;
+  color: #000;
+  margin-left: 20px;
+  background: url(../../resources/img/logo.png)
+  background-position:center;
 }
 
 #chats {
-  font-family: "Indie Flower","Arial",sans-serif;
+  font-family: "Courgette", "Arial", sans-serif;
   font-weight: 800;
   font-size: 50px;
   padding-top: 150px;
   text-align: center;
+  text-shadow: 2px 0 0 #FFF, 0 2px 0 #FFF, 0 -2px 0 #FFF, -2px 0 0 #FFF, 2px 2px 0 #FFF, 2px -2px 0 #FFF, -2px 2px 0 #FFF, -2px -2px 0 #FFF;
+  color: #000;
+}
+
+.content-text {
+  text-shadow: 2px 0 0 #FFF, 0 2px 0 #FFF, 0 -2px 0 #FFF, -2px 0 0 #FFF, 2px 2px 0 #FFF, 2px -2px 0 #FFF, -2px 2px 0 #FFF, -2px -2px 0 #FFF;
+  margin-top: 150px;
+  text-align: center;
+}
+
+/* Add a black background color to the top navigation */
+.topnav {
+   background-color: #333;
+   overflow: hidden;
+   margin-top: 6.3%;
+}
+
+
+
+/* Style the links inside the navigation bar */
+.topnav a {
+   float: left;
+   display: block;
+   color: #f2f2f2;
+   text-align: center;
+   padding: 14px 16px;
+   text-decoration: none;
+   font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+   background-color: #ddd;
+   color: black;
+}
+
+/* Add an active class to highlight the current page */
+.active {
+   background-color: #4CAF50;
+   color: white;
+}
+
+/* Hide the link that should open and close the topnav on small screens */
+.topnav .icon {
+   display: none;
+}
+
+.newsletter {
+  margin-left: 35%;
+  margin-top: 10px;
+}
+
+#mc_embed_signup  {
+  clear:left;
+  font:14px Kreon,Arial,sans-serif;
+  border: solid #000 5px;
+  padding: 10px 10px;
+  max-width: 500px;
+  color: #000;
+  text-shadow: 2px 0 0 #FFF, 0 2px 0 #FFF, 0 -2px 0 #FFF, -2px 0 0 #FFF, 2px 2px 0 #FFF, 2px -2px 0 #FFF, -2px 2px 0 #FFF, -2px -2px 0 #FFF;
 }
